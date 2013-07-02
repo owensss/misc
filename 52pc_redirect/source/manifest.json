@@ -1,0 +1,13 @@
+{
+  "name": "URL Redirect",
+  "version": "0.2",
+  "description": "Checks 52pc URL and redirects as required.",
+  "content_scripts": [ {
+		"matches": ["http://121.199.23.180/*", "http://bbs.52pcgame.com/*"],
+  		"js":["content.js"],
+		"run_at": "document_end"
+  	} ],
+   "manifest_version": 2,
+  "permissions": ["tabs", "http://121.199.23.180/*", "http://bbs.52pcgame.com/*"]
+}
+
